@@ -1,0 +1,300 @@
+.report-details-container {
+
+    min-height: 100vh;
+
+    padding: 40px;
+
+    background: linear-gradient(90deg, #041b3d, #062654);
+
+    color: white;
+
+}
+
+
+
+/* Main Card */
+
+.report-details-card {
+
+    background: #0b254d;
+
+    border: 1px solid #163b6d;
+
+    border-radius: 15px;
+
+    padding: 35px;
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+
+}
+
+
+
+/* Title */
+
+.report-details-card h1 {
+
+    font-size: 32px;
+
+    margin-bottom: 25px;
+
+    color: white;
+
+}
+
+
+
+/* Report Information */
+
+.report-details-card p {
+
+    font-size: 18px;
+
+    margin: 15px 0;
+
+    color: #dbe5f1;
+
+}
+
+
+
+.report-details-card b {
+
+    color: white;
+
+}
+
+
+
+/* Table Area */
+
+.table-wrapper {
+
+    width:100%;
+
+    overflow-x:auto;
+
+    margin-top:30px;
+
+}
+
+
+
+.table-wrapper h3 {
+
+    color:white;
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+}
+
+
+
+
+
+/* Report Table */
+
+.report-table {
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#0b254d;
+
+}
+
+
+
+
+
+.report-table th {
+
+    background:#12386b;
+
+    color:white;
+
+    padding:12px;
+
+    border:1px solid #163b6d;
+
+    text-align:center;
+
+    font-size:15px;
+
+}
+
+
+
+
+
+.report-table td {
+
+    color:white;
+
+    padding:12px;
+
+    border:1px solid #163b6d;
+
+    text-align:center;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+.report-table tr:hover {
+
+    background:#12386b;
+
+}
+
+
+
+
+
+/* Column Widths */
+
+
+.report-table th:nth-child(1),
+.report-table td:nth-child(1){
+
+    width:12%;
+
+}
+
+
+
+.report-table th:nth-child(2),
+.report-table td:nth-child(2){
+
+    width:15%;
+
+}
+
+
+
+.report-table th:nth-child(3),
+.report-table td:nth-child(3){
+
+    width:15%;
+
+}
+
+
+
+.report-table th:nth-child(4),
+.report-table td:nth-child(4){
+
+    width:25%;
+
+}
+
+
+
+.report-table th:nth-child(5),
+.report-table td:nth-child(5){
+
+    width:15%;
+
+}
+
+
+
+.report-table th:nth-child(6),
+.report-table td:nth-child(6){
+
+    width:18%;
+
+}
+
+
+
+
+/* Back Button */
+
+
+.back-btn {
+
+    margin-top:30px;
+
+    padding:12px 35px;
+
+    background:#0d6efd;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+
+.back-btn:hover {
+
+    background:#0b5ed7;
+
+}
+
+
+
+
+
+/* Mobile Responsive */
+
+
+@media(max-width:768px){
+
+
+    .report-details-container{
+
+        padding:20px;
+
+    }
+
+
+
+    .report-details-card{
+
+        padding:20px;
+
+    }
+
+
+
+    .report-details-card h1{
+
+        font-size:24px;
+
+    }
+
+
+
+    .report-table th,
+    .report-table td{
+
+        padding:8px;
+
+        font-size:12px;
+
+    }
+
+
+}

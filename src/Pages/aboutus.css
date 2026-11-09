@@ -1,0 +1,33 @@
+.about-page {
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/Library-Background-Image 9.jpg');
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  
+  min-height: 100vh;           
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  background: rgba(0, 31, 77, 0.85);
+  padding: 40px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.about-content h1 {
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  color: white;
+  font-size: 18px;
+  line-height: 1.8;
+}

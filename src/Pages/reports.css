@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #041b3d;
+}
+
+.reports-container {
+    min-height: 100vh;
+    padding: 25px;
+    background: linear-gradient(90deg, #041b3d, #062654);
+    color: white;
+}
+
+.reports-header {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.library-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.reports-header h1 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.reports-header p {
+    color: #cbd5e1;
+    font-size: 18px;
+}
+
+.filter-card {
+    background: #0b254d;
+    border: 1px solid #163b6d;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr 1.5fr; /* බොත්තම් දෙකට වැඩි ඉඩක් ලබා දීම */
+    gap: 20px;
+    align-items: end;
+}
+
+.filter-group { display: flex; flex-direction: column; }
+.filter-group label { margin-bottom: 8px; color: #dbe5f1; }
+.filter-group select, .filter-group input {
+    padding: 14px;
+    background: #03162f;
+    border: 1px solid #1d4e89;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+}
+
+/* බොත්තම් දෙක එකම ප්‍රමාණයෙන් පෙන්වීමට */
+.search-area {
+    display: flex;
+    gap: 10px; /* බොත්තම් දෙක අතර පරතරය */
+}
+
+.search-btn, .clear-btn {
+    flex: 1; /* දෙකටම සමාන ඉඩ ලබා දෙයි */
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.3s;
+}
+
+.search-btn { background: #0d6efd; }
+.search-btn:hover { background: #0b5ed7; }
+
+.clear-btn { background: #dc3545; }
+.clear-btn:hover { background: #bb2d3b; }
+
+/* Table styles */
+.table-card { background: #0b254d; border: 1px solid #163b6d; border-radius: 12px; padding: 25px; }
+table { width: 100%; border-collapse: collapse; }
+thead { background: #13396b; }
+th { padding: 18px; text-align: left; color: white; }
+td { padding: 18px; border-bottom: 1px solid #163b6d; }
+tbody tr:hover { background: #102f5c; }
+
+/* Status */
+.completed { background: #0f7d54; padding: 8px 15px; border-radius: 6px; }
+.processing { background: #b38a00; padding: 8px 15px; border-radius: 6px; }
+
+/* Generate Button */
+.generate-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 16px 40px;
+    background: #0d6efd;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Action Buttons */
+td button { background: none; border: none; color: white; font-size: 20px; cursor: pointer; margin-right: 10px; }
+
+/* Modal */
+.report-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); display: flex; justify-content: center; align-items: center; z-index: 999; }
+.modal-box { width: 420px; background: #0b254d; border: 1px solid #1d4e89; border-radius: 15px; padding: 30px; color: white; }
+.close-btn { margin-top: 20px; width: 100%; padding: 12px; background: #dc3545; border: none; border-radius: 8px; color: white; cursor: pointer; }
+
+/* Responsive */
+@media(max-width: 1200px) {
+    .filters { grid-template-columns: 1fr; }
+}
+.modal-input, .modal-select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #03162f;
+    border: 1px solid #1d4e89;
+    border-radius: 5px;
+    color: white;
+}
+
+.report-modal label {
+    display: block;
+    margin-top: 10px;
+    color: #cbd5e1;
+}

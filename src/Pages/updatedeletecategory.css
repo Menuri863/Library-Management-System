@@ -1,0 +1,77 @@
+.cat-page-wrapper {
+  padding: 30px;
+  background-color: #0f172a; 
+  min-height: 100vh;
+  color: white;
+}
+
+.cat-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #0b254d;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  border: 1px solid #334155;
+}
+
+.cat-table thead {
+  background-color: #334155; 
+  color: #e2e8f0;
+}
+
+.cat-table th, .cat-table td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid #334155;
+}
+
+
+.action-container {
+  display: flex;
+  gap: 8px; 
+}
+
+.btn-update, .btn-delete {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.btn-update { background-color: #059669; }
+.btn-update:hover { background-color: #047857; }
+
+.btn-delete { background-color: #dc2626; }
+.btn-delete:hover { background-color: #b91c1c; }
+
+h2 { color: #f8fafc; margin-bottom: 20px; }
+
+/* Status Styles */
+.status-pill {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.active { color: #34d399; background: rgba(6, 78, 59, 0.2); }
+.inactive { color: #f87171; background: rgba(127, 29, 29, 0.2); }
+
+.modal-overlay {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7); display: flex;
+  justify-content: center; align-items: center; z-index: 1000;
+}
+.modal-box {
+  width: 400px; background: #1e293b; padding: 25px;
+  border-radius: 10px; color: white;
+}
+.modal-box select, .modal-box input {
+  width: 100%; padding: 10px; margin-bottom: 15px;
+  background: #0f172a; border: 1px solid #334155;
+  color: #ffffff; border-radius: 5px; box-sizing: border-box;
+}
+.modal-buttons { display: flex; gap: 10px; justify-content: center; }

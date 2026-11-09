@@ -1,0 +1,221 @@
+
+/* ===== Global Responsive CSS for LMS ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button,
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+
+/* Common Container */
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* Flex Responsive */
+
+.flex-responsive {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+/* Cards */
+
+.card {
+    max-width: 100%;
+}
+
+
+/* Tables */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* ===== Laptop/Desktop ===== */
+
+@media (min-width:1200px){
+
+    .container{
+        width:85%;
+    }
+
+}
+
+
+/* ===== Tablet ===== */
+
+@media (max-width:992px){
+
+    .container{
+        width:95%;
+    }
+
+    .flex-responsive{
+        flex-direction: column;
+    }
+
+}
+
+
+/* ===== Mobile ===== */
+
+@media (max-width:600px){
+
+    body{
+        font-size:14px;
+    }
+
+
+    .container{
+        width:100%;
+        padding:10px;
+    }
+
+
+    h1{
+        font-size:24px;
+    }
+
+
+    h2{
+        font-size:20px;
+    }
+
+
+    button{
+        width:100%;
+    }
+
+
+    input,
+    select,
+    textarea{
+        width:100%;
+    }
+
+
+    .table-container{
+        overflow-x:auto;
+    }
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+html, body, #root {
+  min-height: 100vh;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding:0;
+}
+
+
+.app-container {
+   display: flex;
+   flex-direction: column;
+    min-height:100vh;
+    position:relative;
+   
+}
+
+.main-content {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
+
+.auth-wrapper {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  background: linear-gradient(to bottom, rgba(10, 25, 47, 0.4), rgba(10, 25, 47, 0.5)), 
+              url('/bg.jpg') no-repeat center center / cover;
+}
+
+
+.auth-card {
+  background: #0d1b33;
+  padding: 30px;
+  border-radius: 15px;
+  width: 380px;
+  border: 1px solid #1a3a61;
+  color: white;
+  text-align: center;
+}
+
+
+.logo-section { text-align: center; margin-bottom: 20px; }
+.logo-section h1 { font-size: 20px; margin: 0; }
+
+.input-field { 
+  width: 100%; 
+  padding: 12px; 
+  margin: 8px 0; 
+  background: #1a3a61; 
+  border: 1px solid #234575; 
+  border-radius: 5px; 
+  color: white; 
+  box-sizing: border-box; 
+}
+
+
+.submit-btn { 
+  width: 100%; 
+  padding: 12px; 
+  background: #ffca28; 
+  border: none; 
+  border-radius: 5px; 
+  font-weight: bold; 
+  cursor: pointer; 
+  margin-top: 15px; 
+  color: #0d1b33;
+}
+
+.options { display: flex; justify-content: space-between; font-size: 12px; margin: 10px 0; color: #8892b0; }
+.social-btns { display: flex; gap: 10px; margin-top: 15px; }
+.social-btn { flex: 1; padding: 10px; background: transparent; border: 1px solid #234575; color: white; border-radius: 5px; cursor: pointer; }
+
+
+.footer-text { text-align: center; margin-top: 20px; font-size: 13px; }
+.footer-text a { color: #ffca28; text-decoration: none; }
+
+
+

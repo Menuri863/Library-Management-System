@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+
+.generate-container{
+
+    min-height:100vh;
+
+    background:linear-gradient(90deg,#041b3d,#062654);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+    color:white;
+
+}
+
+
+
+.generate-card{
+
+    width:450px;
+
+    background:#0b254d;
+
+    border:1px solid #163b6d;
+
+    border-radius:15px;
+
+    padding:35px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+
+}
+
+
+
+.generate-card h1{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    font-size:32px;
+
+}
+
+
+
+.generate-card label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#dbe5f1;
+
+    font-size:16px;
+
+}
+
+
+
+.generate-card input,
+.generate-card select{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-bottom:20px;
+
+    background:#03162f;
+
+    color:white;
+
+    border:1px solid #1d4e89;
+
+    border-radius:8px;
+
+    outline:none;
+
+}
+
+
+
+.generate-card select option{
+
+    background:#03162f;
+
+}
+
+
+
+.generate-card button{
+
+    width:100%;
+
+    padding:15px;
+
+    background:#0d6efd;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    margin-top:10px;
+
+}
+
+
+
+.generate-card button:hover{
+
+    background:#0b5ed7;
+
+}
+
+
+
+@media(max-width:600px){
+
+    .generate-card{
+
+        width:100%;
+
+        padding:25px;
+
+    }
+
+
+    .generate-card h1{
+
+        font-size:26px;
+
+    }
+
+}

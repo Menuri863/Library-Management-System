@@ -1,0 +1,107 @@
+.reservation-container {
+    padding: 20px;
+    background: #0b254d;
+    border-radius: 10px;
+    min-height: 100vh;
+}
+
+.reservation-container h2 {
+    margin-bottom: 20px;
+    color:white;
+    text-align: center;
+}
+
+
+/* Table */
+
+.reservation-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+
+.reservation-container th {
+    background: #0b172a;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+
+
+
+/* Buttons */
+
+.approve-btn,
+.reject-btn {
+
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 3px;
+    font-size: 14px;
+}
+
+
+.approve-btn {
+
+    background: #2ecc71;
+    color: white;
+
+}
+
+
+.approve-btn:hover {
+
+    background: #27ae60;
+
+}
+
+
+
+.reject-btn {
+
+    background: #e74c3c;
+    color: white;
+
+}
+
+
+.reject-btn:hover {
+
+    background: #c0392b;
+
+}
+
+
+/* Empty message */
+
+.reservation-container td[colspan="6"] {
+
+    padding: 30px;
+    color: #777;
+    font-size: 16px;
+
+}
+.reservation-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #0b172a;
+    color: #333;
+}
+
+.reservation-container td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: White;
+}
+
+.reservation-container th {
+    background: #0b172a;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}

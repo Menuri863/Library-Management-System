@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0b172a;
+}
+
+
+/* Main Wrapper */
+.fine-page-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background: #0b172a;
+}
+
+
+/* Main Container */
+.fine-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    min-height: 100vh;
+    padding: 30px;
+    background: #0b254d;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+
+/* Top Header */
+.top-header {
+    background: #0b172a;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.top-header h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+
+/* Layout */
+.content-area {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 20px;
+    align-items: start;
+}
+
+
+/* Cards */
+.transaction-card,
+.payment-card {
+    background: #0b172a;
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    border: 1px solid #243b55;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.transaction-card h2,
+.payment-card h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Table Styling */
+.fine-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.fine-table th {
+    background: #16213e;
+    color: #cbd5e1;
+    padding: 12px 8px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.fine-table td {
+    background: #0f172a;
+    color: white;
+    padding: 12px 8px;
+    border-bottom: 1px solid #243b55;
+    font-size: 13px;
+    word-wrap: break-word;
+}
+
+
+.member-box {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    align-items: center;
+    background: #16213e;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+.member-info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.member-info-container div {
+    flex: 1;
+}
+
+
+/* Balance Section */
+.balance-section {
+    background: #16213e;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.balance-section h1 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+
+.receipt-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #00bfff;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+/* Responsive */
+@media(max-width: 1024px) {
+    .content-area {
+        grid-template-columns: 1fr;
+    }
+}

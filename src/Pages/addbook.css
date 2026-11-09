@@ -1,0 +1,117 @@
+.addbook-page-wrapper {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #0b172a;
+  min-height: 100vh;
+}
+
+/* Form Container */
+.addbook-form-container {
+  background-color: #0b254d;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.addbook-form-container h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.addbook-form-container input, 
+.addbook-form-container select {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background: transparent;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.addbook-form-container input:focus, 
+.addbook-form-container select:focus {
+  background-color: #1e293b;
+  outline: none;
+  border-color: #0ea5e9;
+}
+
+.addbook-form-container select option {
+  background-color: #0b172a;
+  color: white;
+}
+
+/* Table Container */
+.book-table-container {
+  background-color: #0b254d;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+.book-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.book-table th {
+  background-color: #0ea5e9;
+  padding: 15px;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.book-table td {
+  padding: 15px;
+  border-bottom: 1px solid #1e293b;
+  font-size: 14px;
+}
+
+/* Actions */
+.form-actions {
+  grid-column: span 2;
+  display: flex;
+  gap: 20px;
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+.add-btn, .clear-btn {
+  flex: 1; 
+  max-width: 250px; 
+  padding: 12px 30px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  transition: background 0.3s;
+  text-align: center;
+}
+
+.add-btn { background-color: #0ea5e9; }
+.add-btn:hover { background-color: #0284c7; }
+
+.clear-btn { background-color: #475569; }
+.clear-btn:hover { background-color: #334155; }

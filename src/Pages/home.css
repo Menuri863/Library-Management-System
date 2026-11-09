@@ -1,0 +1,83 @@
+.home-container {
+
+    min-height:100vh;
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    animation:slideshow 12s infinite;
+
+    position:relative;
+
+    z-index:1;
+}
+
+
+@keyframes slideshow {
+
+    0%,25% {
+        background-image:url('/Library-Background-Image 3.jpg');
+    }
+
+    26%,50% {
+        background-image:url('/Library-Background-Image 4.jpg');
+    }
+
+    51%,75% {
+        background-image:url('/Library-Background-Image 5.avif');
+    }
+
+    76%,100% {
+        background-image:url('/Library-Background-Image 6.webp');
+    }
+
+}
+
+
+
+
+
+.overlay {
+
+    min-height:100vh;
+
+    background:rgba(0,0,0,0.5);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    color:white;
+
+    text-align:center;
+
+   
+
+}
+
+
+
+
+
+.overlay h1 {
+
+    font-size:55px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.overlay p {
+
+    font-size:22px;
+
+}
